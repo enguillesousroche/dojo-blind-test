@@ -1,0 +1,44 @@
+export type AudioAnalysisObject = {
+meta?: {
+analyzer_version?: String;
+platform?: String;
+detailed_status?: String;
+status_code?: Number;
+timestamp?: Number;
+analysis_time?: Number;
+input_process?: String;
+};
+track?: {
+num_samples?: Number;
+duration?: Number;
+sample_md5?: String;
+offset_seconds?: Number;
+window_seconds?: Number;
+analysis_sample_rate?: Number;
+analysis_channels?: Number;
+end_of_fade_in?: Number;
+start_of_fade_out?: Number;
+loudness?: ;
+tempo?: ;
+tempo_confidence?: Number;
+time_signature?: ;
+time_signature_confidence?: Number;
+key?: ;
+key_confidence?: Number;
+mode?: ;
+mode_confidence?: Number;
+codestring?: String;
+code_version?: Number;
+echoprintstring?: String;
+echoprint_version?: Number;
+synchstring?: String;
+synch_version?: Number;
+rhythmstring?: String;
+rhythm_version?: Number;
+};
+bars?: ;
+beats?: ;
+sections?: ;
+segments?: ;
+tatums?: ;
+};

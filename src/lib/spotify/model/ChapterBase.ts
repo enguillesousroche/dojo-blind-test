@@ -1,0 +1,22 @@
+export type ChapterBase = {
+audio_preview_url: String;
+available_markets?: ;
+chapter_number: Number;
+description: String;
+html_description: String;
+duration_ms: Number;
+explicit: Boolean;
+external_urls: ;
+href: String;
+id: String;
+images: ;
+is_playable: Boolean;
+languages: ;
+name: String;
+release_date: String;
+release_date_precision: String;
+resume_point: ;
+type: String;
+uri: String;
+restrictions?: ;
+};

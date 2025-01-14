@@ -1,0 +1,20 @@
+export type AudioFeaturesObject = {
+acousticness?: Number;
+analysis_url?: String;
+danceability?: Number;
+duration_ms?: Number;
+energy?: Number;
+id?: String;
+instrumentalness?: Number;
+key?: ;
+liveness?: Number;
+loudness?: ;
+mode?: ;
+speechiness?: Number;
+tempo?: ;
+time_signature?: ;
+track_href?: String;
+type?: String;
+uri?: String;
+valence?: Number;
+};

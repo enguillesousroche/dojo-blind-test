@@ -1,0 +1,22 @@
+export type EpisodeBase = {
+audio_preview_url: String;
+description: String;
+html_description: String;
+duration_ms: Number;
+explicit: Boolean;
+external_urls: ;
+href: String;
+id: String;
+images: ;
+is_externally_hosted: Boolean;
+is_playable: Boolean;
+language?: String;
+languages: ;
+name: String;
+release_date: String;
+release_date_precision: String;
+resume_point: ;
+type: String;
+uri: String;
+restrictions?: ;
+};

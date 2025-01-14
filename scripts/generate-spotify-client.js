@@ -35,16 +35,29 @@ function getGeneratedCode(typeName, typeSchema) {
 function getGeneratedType(typeSchema) {
   const schemaType = typeSchema.type;
 
-  // TO DO: Generate typescript code from schema
   switch (schemaType) {
-    case "number":
-    case "integer":
-    case "string":
-    case "boolean":
-    case "array":
-    case "object":
-    default:
-      return "";
+    case "number": return "Number";
+    case "integer": return "Number";
+    case "string": return "String" ;
+    case "boolean": return "Boolean";
+    case "array": return "";
+    case "object": {var type = '{\n';
+    if (typeSchema.properties != undefined){ 
+      for (const typeName of Object.keys(typeSchema.properties)) {
+          type += `${typeName}`; 
+          if (typeSchema.required != undefined){
+            if (typeSchema.required.includes(typeName)){type += "";} 
+            else{type += "?";}
+            }
+          else {type+="?";}
+          type +=`: ${getGeneratedType(typeSchema.properties[typeName])};\n`;
+        }
+        
+      }
+    type +='}';
+    return type;
+    }
+    default: return "";
   }
 }
 
